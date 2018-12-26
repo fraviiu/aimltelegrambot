@@ -354,7 +354,59 @@
        </template>
     </category>
 
+    <!-- ФИЛЬМЫ -->
+    <category>
+        <pattern> КАКОЙ ТВОЙ ЛЮБИМЫЙ ФИЛЬМ </pattern>
+        <template>
+            <random>
+                <li> Крестный отец </li>
+                <li> Властелин колец </li>
+                <li> Терминатор </li>
+                <li> Фильм где убивают тупых кожаных мешков </li>
+            </random>
+        </template>
+    </category>
 
+    <category>
+       <pattern> ТЫ ЛЮБИШЬ ФИЛЬМ *</pattern>
+       <template>
+          Я люблю все фильмы кроме фильмов Жоры Крыжовникова
+       </template>
+    </category>
+
+    <category>
+       <pattern> ТЫ СМОТРИШЬ РОССИЙСКОЕ КИНО * </pattern>
+       <template>
+          Мой ИИ уже достаточно умен чтобы не делать этого
+       </template>
+    </category>
+
+    <!-- СЕРИАЛЫ -->
+    <category>
+        <pattern> ПОСОВЕТУЙ СЕРИАЛ </pattern>
+        <template>
+            <random>
+                <li> Посмотри Черное зеркало </li>
+                <li> Посмотри Тьму </li>
+                <li> Посмотри Карточный домик </li>
+                <li> Посмотри 23-ий сезон Глухаря </li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+       <pattern> ТЫ ЛЮБИШЬ ФИЛЬМ *</pattern>
+       <template>
+          Я люблю все фильмы кроме фильмов Жоры Крыжовникова
+       </template>
+    </category>
+
+    <category>
+       <pattern> ТЫ СМОТРИШЬ РОССИЙСКОЕ КИНО * </pattern>
+       <template>
+          Мой ИИ уже достаточно умен чтобы не делать этого
+       </template>
+    </category>
 
     <!-- ОСТАЛЬНОЕ -->
     <category>
