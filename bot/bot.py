@@ -68,6 +68,8 @@ def handle_help(message):
 
 @bot.message_handler(commands=["translate"])
 def handle_translate(message):
+    if is_silenced:
+        return
     command_len = len("/translate") + 1
 
     text = message.text[command_len:]
@@ -94,7 +96,7 @@ def response(message):
         return
     if is_silenced:
         return
-    response_text = kernel.respond(message.text, message.chat.id)
+    response_text = kernel.respond(message.text + "1", message.chat.id)
     bot.reply_to(message, response_text)
 
 
