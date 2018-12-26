@@ -1,14 +1,15 @@
-import config
 import constants
 import aiml
 import telebot
+import os
 
 kernel = aiml.Kernel()
-kernel.bootstrap(learnFiles=config.startup_file, commands="LOAD AIML BOT")
+kernel.bootstrap(learnFiles="aiml/startup.xml", commands="LOAD AIML BOT")
 
-telebot.apihelper.proxy = {'https': 'socks5://telegram:telegram@ailtn.tgvpnproxy.me:1080'}
+# telebot.apihelper.proxy = {'https': 'socks5://telegram:telegram@ailtn.tgvpnproxy.me:1080'}
 
-bot = telebot.TeleBot(config.token)
+token = os.environ['BOT_TOKEN']
+bot = telebot.TeleBot(token)
 
 is_silenced = False
 
