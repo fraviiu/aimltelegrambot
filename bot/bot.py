@@ -10,8 +10,8 @@ kernel.bootstrap(learnFiles="aiml/startup.xml", commands="LOAD AIML BOT")
 
 # telebot.apihelper.proxy = {'https': 'socks5://telegram:telegram@ailtn.tgvpnproxy.me:1080'}
 
-# token = os.environ['BOT_TOKEN']
-bot = telebot.TeleBot('1284275711:AAHQuDfZ6W11ZDKob_yJ9jhD70KVYW2U5lk')
+token = os.environ['1284275711:AAHQuDfZ6W11ZDKob_yJ9jhD70KVYW2U5lk']
+bot = telebot.TeleBot('token')
 
 is_silenced = False
 
