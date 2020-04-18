@@ -29,7 +29,7 @@ def translate_text(text, dest):
 
 
 @bot.message_handler(commands=["mute"])
-def handle_start(message):
+def handle_help(message):
     global is_silenced
     is_silenced = True
     bot.send_message(message.chat.id, "O JOGO PAROU ")
@@ -43,14 +43,14 @@ def handle_start(message):
 
 
 @bot.message_handler(commands=["start"])
-def handle_start(message):
+def handle_mute(message):
     if is_silenced:
         return
     bot.send_message(message.chat.id, constants.title_ru)
 
 
 @bot.message_handler(commands=["help"])
-def handle_help(message):
+def handle_hel(message):
     if is_silenced:
         return
     bot.send_message(message.chat.id, constants.help_ru)
